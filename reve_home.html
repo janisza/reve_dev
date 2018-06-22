@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reve Realty Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="reve_styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="docScroller">
+        <div class="jumbotron text-center">
+            <h1>Reve Realty</h1>
+            <p>Part of the Hey Girl Hey family of companies</p>
+        </div>
+
+        <div id="homeSidenav" class="sidenav">
+            <a href="#about">
+                <span class="dot"></span>
+                <span>About</span>
+            </a>
+            <a href="#featListCarousel">Featured</a>
+            <a href="#team">Team</a>
+        </div>
+
+        <div id="about" class="container-fluid bg-grey">
+            <h2>Some stuff about the company</h2>
+            <h4>Lorem ipsum...</h4>
+            <p>dolor sit amet</p>
+        </div>
+
+        <div class="container-fluid text-center bg-blue">
+            <h2>Featured listings</h2>
+            <div id="featListCarousel" class="carousel slide text-center" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#featListCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#featListCarousel" data-slide-to="1"></li>
+                <li data-target="#featListCarousel" data-slide-to="2"></li>
+              </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <h4>Change to image1<br><span>something</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>Change to image2<br><span>something</span></h4>
+                    </div>
+                    <div class="item">
+                        <h4>Change to image3<br><span>something</span></h4>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#featListCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+
+        <div id="services" class="container-fluid text-center bg-grey">
+            <div class="row">
+                <div class="col-sm-4"><h4>Buy</h4></div>
+                <div class="col-sm-4"><h4>Sell</h4></div>
+                <div class="col-sm-4"><h4>Rent</h4></div>
+            </div>
+        </div>
+
+        <div id="team" class="container-fluid bg-blue">
+            <h2>Some stuff about the team</h2>
+            <h4>Lorem ipsum...</h4>
+            <p>dolor sit amet</p>
+        </div>
+    </div>
+    <script src="polyfill.js"></script>
+    <script src="scrollsnap-polyfill.js"></script>
+</body>
+
+</html>
