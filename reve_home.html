@@ -6,95 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="reve_styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="reve_styles.css">
+
 </head>
 
-<body data-spy="scroll" data-target="#homeSidenav" data-offset="50">
-
-    <div class="docScroller">
-
-
-        <div class="jumbotron text-center">
-            <h1>Reve Realty</h1>
-            <p>Part of the Hey Girl Hey family of companies</p>
+<body id="bootstrap-overrides">
+<!--<body data-spy="scroll" data-target="#homeSidenav" data-offset="50">-->
+    <section class="fixed">
+        <div id="call-us" div class="fixed-flag">
+            <h4>Call us: XXX.XXX.XXXX</h4>
         </div>
-
-        <div id="homeSidenav" class="sidenav">
-            <div class="side-item">
-                <a href="#about" id="side-about">
-                    <span class="menu-dot"></span>
-                    <span class="menu-text">About</span>
+        <div id="side-nav" div class="fixed-buttons">
+            <div id="home-btn" div class="side-button home">
+                <a href="reve_home.html">
+                    <img src="images/reve_icon.jpg" class="button-image" alt="home" />
                 </a>
             </div>
-            <div class="side-item">
-                <a href="#featured" id="side-featured">Featured</a>
+
+            <div id="menu-btn" div class="side-button menu">
+                <button id="openMenuButton" class="menuButton">
+                    <img src="images/menu_icon.jpg" class="button-image" alt="menu" />
+                </button>
+                <div id="menuDropdown" class="menu-content">
+                    <a href="#">Active Listings</a>
+                    <a href="#">Sold Listings</a>
+                    <a href="#">Working With Us</a>
+                    <a href="#">Our Team</a>
+                    <a href="#">Contact Us</a>
+                </div>
             </div>
-            <div class="side-item">
-                <a href="#services" id="side-services">Services</a>
+
+            <div id="contact-btn" div class="side-button contact">
+                <a href="#">
+                    <img src="images/contact_icon.jpg" class="button-image" alt="contact" />
+                </a>
             </div>
-            <div class="side-item">
-                <a href="#team" id="side-team">Team</a>
+
+        </div>
+        <div id="fixed-text" div class="content-text">
+            <div class="slide" data-slide="0">
+                <h1 class="animatable">r&ecircve realtors</h1>
+                <!--<h2 class="animatable">New Orleans</h2>-->
+                <div class="animatable">
+                    <p>part of the HeyGirlHey family of companies</p>
+                </div>
+            </div>
+            <div class="slide" data-slide="1">
+                <h2 class="animatable">Uptown class with a Downtown weave</h1>
+                <div class="animatable">
+                    <p>Oh no she bettah don't</p>
+                    <p>Ain't nobody got time for dat</p>
+                </div>
+            </div>
+            <div class="slide" data-slide="2">
+                <h2 class="animatable">Featured Listings</h2>
+                <div class="animatable">
+                    <p>Maybe three photos across or something</p>
+                </div>
+            </div>
+            <div class="slide" data-slide="3">
+                <h2 class="animatable">Buy or sell</h2>
+            </div>
+            <div class="slide" data-slide="4">
+                <div id="bio-slide" div class="container-fluid animatable">
+                    <div class="row">
+                        <h2>Meet our team</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/bios/joey.jpg" class="bio-img img-rounded" />
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="images/bios/tracey.jpg" class="bio-img img-rounded" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/bios/clint.jpg" class="bio-img img-rounded" />
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="images/bios/ryan.jpg" class="bio-img img-rounded" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div id="about" class="container-fluid bg-grey">
-            <h2>Some stuff about the company</h2>
-            <h4>Lorem ipsum...</h4>
-            <p>dolor sit amet</p>
+
+    <section class="panel home" data-section-name="home">
+        <div id="homescreen background" div class="container-fluid">
+            <img src="images/streetcar.jpg" class="stretch-scale" alt="St Charles Avenue streetcar">
         </div>
-
-        <div id="featured" class="container-fluid text-center bg-blue">
-            <h2>Featured listings</h2>
-            <div class="carousel slide text-center" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#featListCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#featListCarousel" data-slide-to="1"></li>
-                <li data-target="#featListCarousel" data-slide-to="2"></li>
-              </ol>
-
+    </section>
+    <section class="panel" data-section-name="about">
+        <div id="about background" div class="container-fluid">
+            <img src="images/double-shotgun.jpg" class="stretch-scale" alt="Classic uptown double shotgun house">
+        </div>
+    </section>
+    <section class="panel" data-section-name="featured properties">
+        <div class="container-fluid">
+            <div class="carousel slide carousel-fade" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <h4>Change to image1<br><span>something</span></h4>
+                        <img src="images/carousel/cherokee.jpg" class="stretch-scale" alt="cherokee" />
                     </div>
                     <div class="item">
-                        <h4>Change to image2<br><span>something</span></h4>
+                        <img src="images/carousel/waterfront.jpg" class="stretch-scale" alt="pontchartrain" />
                     </div>
                     <div class="item">
-                        <h4>Change to image3<br><span>something</span></h4>
+                        <img src="images/carousel/dining.jpg" class="stretch-scale" alt="bamboo" />
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel/jefferson.jpg" class="stretch-scale" alt="jefferson" />
+                    </div>
+                    <div class="item">
+                        <img src="images/carousel/kitchen.jpg" class="stretch-scale" alt="pauger" />
                     </div>
                 </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#featListCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
+    </section>
 
-        <div id="services" class="container-fluid text-center bg-grey">
-            <div class="row">
-                <div class="col-sm-4"><h4>Buy</h4></div>
-                <div class="col-sm-4"><h4>Sell</h4></div>
-                <div class="col-sm-4"><h4>Rent</h4></div>
-            </div>
+    <section class="panel" data-section-name="services">
+        <div id="services background" div class="container-fluid">
+            <img src="images/keys-on-table.jpg" class="stretch-scale" alt="St Charles Avenue streetcar">
         </div>
+    </section>
 
-        <div id="team" class="container-fluid bg-blue">
-            <h2>Some stuff about the team</h2>
-            <h4>Lorem ipsum...</h4>
-            <p>dolor sit amet</p>
+    <section class="panel" data-section-name="team">
+        <div class="container-fluid bg-blue">
+            <img src="images/garden_district.jpg" class="stretch-scale" alt="Garden district scene">
         </div>
+    </section>
 
-    </div>
+    <script src="jquery.scrollify.js"></script>
+    <script src="reve_jquery.js"></script>
+
 <!--
     <script src="polyfill.js"></script>
     <script src="scrollsnap-polyfill.js"></script>

@@ -1,0 +1,82 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>jQuery Scrollify - Pagination Example</title>
+		<meta name="description" content="A jQuery Scrollify example of implementing pagination.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta property="og:title" content="jQuery Scrollify - Pagination Example">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="A jQuery Scrollify example of implementing pagination.">
+		<meta property="og:image" content="https://projects.lukehaas.me/scrollify/images/scrollify-screenshot.jpg">
+		<meta property="og:url" content="https://projects.lukehaas.me/scrollify/examples/pagination">
+		<!--[if lt IE 9]>
+		<script src="script/html5shiv.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300"/>
+		<link rel="stylesheet" href="reve_styles_debug.css" />
+
+	</head>
+	<body>
+
+		<section class="panel home" data-section-name="home">
+			<div class="inner">
+				<div class="vertical-center">
+					<h1>Pagination</h1>
+					<p>Simple navigation for Scrollify sections.</p>
+					<p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+				</div>
+			</div>
+			<div class="social-corner">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://projects.lukehaas.me/scrollify/" data-text="Scrollify - a jQuery plugin that assists scrolling and smoothly snaps to sections." data-via="lukehaas">Tweet</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				<a class="github-button" href="https://github.com/lukehaas/scrollify" data-icon="octicon-star" data-count-href="/lukehaas/scrollify/stargazers" data-count-api="/repos/lukehaas/scrollify#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star lukehaas/scrollify on GitHub">Star</a>
+			</div>
+
+		</section>
+		<section class="panel panel1" data-section-name="second">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>afterRender()</h2>
+					<p>Use Scrollify's <span class="code">afterRender()</span> callback to build your pagination links.</p>
+				</div>
+			</div>
+		</section>
+		<section class="panel panel2" data-section-name="third">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>before()</h2>
+					<p>Apply an active class with the <span class="code">before()</span> callback.</p>
+				</div>
+			</div>
+		</section>
+		<section class="panel panel3" data-section-name="fourth">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>move()</h2>
+					<p>Call <span class="code">$.scrollify.move()</span> in a click event to navigate to sections.</p>
+				</div>
+			</div>
+		</section>
+
+		<script src="jquery-2.1.1.js"></script>
+
+		<script src="jquery.scrollify.js"></script>
+
+		<script src="reve_jquery_debug.js"></script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-50992962-1', 'lukehaas.me');
+		ga('send', 'pageview');</script>
+	</body>
+</html>
